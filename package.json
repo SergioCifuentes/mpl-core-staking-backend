@@ -1,0 +1,25 @@
+{
+  "name": "mpl-core-staking-backend",
+  "version": "1.0.0",
+  "description": "This repository will hold the **backend** part of the MPL Core staking platform, built with Node.js (or Express). It will manage server-side logic, including processing transactions, handling rewards, and communicating with the Solana blockchain if needed.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-core": "^1.1.0-alpha.0",
+    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "@metaplex-foundation/umi-bundle-defaults": "^0.9.1",
+    "bs58": "^6.0.0",
+    "express": "^4.19.2"
+  }
+}

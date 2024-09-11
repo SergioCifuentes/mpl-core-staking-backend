@@ -6,7 +6,10 @@ import { Keypair } from '@solana/web3.js';
 
 const app = express();
 app.use(express.json());
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
+
+const cors = require('cors');
+app.use(cors());
 
 const umi = createUmi("https://api.devnet.solana.com", "finalized");
 
@@ -16,6 +19,11 @@ app.get('/create-wallet', (req, res) => {
   const secretKey = Array.from(keypair.secretKey);
 
   res.json({ publicKey, secretKey });
+});
+
+app.get('/test', (req, res) => {
+
+res.json("success");
 });
 
 app.post('/connect-wallet', (req, res) => {

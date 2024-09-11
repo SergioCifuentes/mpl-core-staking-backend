@@ -20,6 +20,7 @@
     "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
     "@metaplex-foundation/umi-bundle-defaults": "^0.9.1",
     "bs58": "^6.0.0",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "mpl-core-staking-backend": "file:"
   }

@@ -4,6 +4,7 @@
   "description": "This repository will hold the **backend** part of the MPL Core staking platform, built with Node.js (or Express). It will manage server-side logic, including processing transactions, handling rewards, and communicating with the Solana blockchain if needed.",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node-dev src/index.ts",
     "dev": "ts-node-dev src/index.ts"
   },
   "keywords": [],
